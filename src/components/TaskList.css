@@ -1,0 +1,30 @@
+.activeTaskList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1.5em;
+}
+
+.active h2, .done h3 {
+    color: rgb(96, 177, 243);
+}
+
+.done__info{
+    font-size: 12px;
+    color: rgb(247, 150, 59);
+}
+
+.taskList__hr{
+    border-top: 4px dashed rgb(96, 177, 243);
+}
+
+.active__empty{
+    font-size: 20px;
+    color: rgb(247, 150, 59);
+}
+
+@media (max-width: 450px){
+    .done{
+        padding: .5em;
+    }
+}

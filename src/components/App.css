@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  max-width: 90%;
+  min-height: 80vh;
+  margin: 20px auto;
+  border: 4px dashed rgb(96, 177, 243);
+  border-radius: 10px;
+  background-image: radial-gradient(white, rgba(247, 150, 59, 0.397));
+  font-family: 'Grandstander', cursive;
+}
+
+.App h1,
+.App h2
+{
+  color: rgb(96, 177, 243);
+  padding: .5em;
+}
+
+.App__hr{
+  border-top: 4px dashed rgb(96, 177, 243);  
+}

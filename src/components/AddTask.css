@@ -1,0 +1,95 @@
+.form {
+
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.addTask__name,
+.addTask__date {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed rgb(96, 177, 243);
+    border-radius: 7px;
+    padding: 1em;
+    justify-content: space-around;
+    min-height: 80px;
+    align-items: center;
+    color: rgb(96, 177, 243);
+}
+
+input {
+    padding: 5px;
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+}
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.addTask__hr{
+    border-top: 4px dashed rgb(96, 177, 243);
+}
+
+.addTask__input,
+.addTask__dateInput {
+    border: 2px dashed rgb(96, 177, 243);
+    border-radius: 5px;
+    background-image: radial-gradient(white, rgba(247, 150, 59, 0.322));
+    transition: ease 200ms;
+    color: rgb(96, 177, 243);
+}
+
+.addTask__input::placeholder{
+    color: rgb(96, 177, 243);
+}
+
+.addTask__dateInput:hover{
+    cursor: pointer;
+    background-color: rgb(96, 177, 243);
+    border: 2px solid black
+}
+.addTask__input:hover{
+    cursor: pointer;
+    background-color: rgb(96, 177, 243);
+    border: 2px solid black
+}
+
+.addTask__button {
+    min-width: 100px;
+    border: 1px solid  rgb(96, 177, 243);
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    transition: ease 200ms;
+    font-family: 'Grandstander', cursive;
+    font-weight: 400;
+    background-image: radial-gradient(white, rgba(247, 150, 59, 0.247));
+    outline: none;
+    color: rgb(96, 177, 243);
+}
+
+.addTask__button:hover {
+    background-color: rgb(96, 177, 243);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 450px){
+    .form{
+    flex-direction: column;
+}
+.addTask__name,
+.addTask__date {
+    min-width: 200px;
+    margin-bottom: 1em;
+}
+
+}
+
+
